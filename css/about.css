@@ -1,0 +1,15 @@
+main div {
+  color: rgb(19, 18, 19);
+  background-color: rgba(223, 215, 215, 0.4);
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+
+main div h3 {
+  color: rgba(39, 37, 37, 0.911);
+  font-weight: 799;
+}
+main div p {
+  color: rgb(17, 18, 19);
+  font-weight: 500;
+}
