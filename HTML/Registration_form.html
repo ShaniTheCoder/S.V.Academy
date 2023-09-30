@@ -5,16 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration form</title>
-    <link rel="stylesheet" href="css/Registration_form.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/Registration_form.css">
 </head>
-<div>
-    <div>
-        <img src="image/logo.png" alt="Logo" class="form-head">
-        <h1>S.V. Academy</h1>
-    </div>
-</div>
 
 <body>
+    <nav>
+        <div class="logo"><img src="/image/logo.png" alt="logo"></div>
+        <div id="nav-div">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="note.html">Notes</a>
+                </li>
+            </ul>
+        </div>
+        <div id="register"><a href="Registration_form.html">Register</a></div>
+    </nav>
+    <main>
+        <div class="head">
+            <div class="logo">
+                <img src="/image/logo.png" alt="Academy_Logo">
+            </div>
+            <div class="content">
+                <h2>S.V.Academy</h2>
+                <p>Register for s.v.academy</p>
+            </div>
+        </div>
+
+        <div class="Form-content">
+            <form action="/PHP/data.php">
+                <label for="name">Name: </label>
+                <input type="text" name="student-name" id="name" placeholder="Enter your name">
+                <label for="standerd">STD:</label>
+                <input type="text" name="standerd" id="standerd" placeholder="Enter your standerd">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email-id">
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="123-452-3692">
+                <label for="school">School:</label>
+                <input type="text" name="school" id="school" placeholder="Enter your current school name">
+                <label for="birthday">birthdate</label>
+                <input type="date" name="Bdate" id="birthday">
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <div class="foot">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ipsa in consequuntur atque ad officia
+                magnam esse! Dolorem pariatur delectus laudantium aperiam voluptas consequatur eaque iusto molestias qui
+                nulla! Aliquam nisi quas iusto nemo qui laborum explicabo itaque reiciendis voluptas ratione numquam
+                nihil, eos non animi maiores cupiditate nesciunt magnam quia! Voluptas, quas sunt sit eius illum
+                deleniti beatae neque eum doloremque aperiam, placeat exercitationem ad harum libero iure.</p>
+        </div>
+    </main>
+
+
 
 </body>
 

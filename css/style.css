@@ -45,7 +45,27 @@ nav {
   background: #e53935;
   padding: 10px;
 }
-
+#register {
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 8px;
+  color: white;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  position: relative;
+  top: 25%;
+  right: 2%;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: #ffc04d;
+  font-size: 15px;
+  text-decoration: none;
+}
+#register:hover {
+  color: #ffc04d;
+  background-color: transparent;
+  border: 2px solid #ff9800;
+}
 nav ul {
   list-style: none;
   margin: auto;
