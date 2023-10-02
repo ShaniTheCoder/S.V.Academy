@@ -7,6 +7,7 @@
     <title>Registration form</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/Registration_form.css">
+    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -23,43 +24,124 @@
         </div>
         <div id="register"><a href="Registration_form.html">Register</a></div>
     </nav>
-    <main>
+    <main class="main">
         <div class="head">
-            <div class="logo">
-                <img src="/image/logo.png" alt="Academy_Logo">
+            <div class="segment">
+                <img src="/image/logo.png" alt="">
+                <h3>Register for S.V.Academy</h4>
             </div>
-            <div class="content">
-                <h2>S.V.Academy</h2>
-                <p>Register for s.v.academy</p>
+            <div>
+                <p>Note:
+                    1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, alias!<br>
+                    2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, alias!<br>
+                    3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, alias!
+                </p>
             </div>
         </div>
 
         <div class="Form-content">
-            <form action="/PHP/data.php">
-                <label for="name">Name: </label>
-                <input type="text" name="student-name" id="name" placeholder="Enter your name">
-                <label for="standerd">STD:</label>
-                <input type="text" name="standerd" id="standerd" placeholder="Enter your standerd">
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email-id">
-                <label for="phone">Phone:</label>
-                <input type="tel" name="phone" id="phone" placeholder="123-452-3692">
-                <label for="school">School:</label>
-                <input type="text" name="school" id="school" placeholder="Enter your current school name">
-                <label for="birthday">birthdate</label>
-                <input type="date" name="Bdate" id="birthday">
+            <form onsubmit="return postToGoogle();">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label class="label" for="name">Full Name:</label>
+                    <input type="text" name="entry.1944863926" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-row">
+
+                    <!-- Date of Birth -->
+                    <div class="form-group">
+                        <label class="label" for="birthday">Date of Birth:</label>
+                        <input type="date" name="entry.1156770680" id="birthday" required>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="form-group">
+                        <label class="label" for="gender">Gender:</label>
+                        <select name="entry.1614667268" id="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="form-group">
+                        <label class="label" for="phone">Phone:</label>
+                        <input type="tel" name="entry.152475250" id="phone" placeholder="123-452-3692" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="email">E-mail:</label>
+                    <input type="email" name="entry.2088708349" id="email" placeholder="Enter your email-id">
+                </div>
+
+
+
+                <!-- Address -->
+                <div class="form-group">
+                    <label class="label" for="address">Address:</label>
+                    <input type="text" name="entry.1408227433" id="address" placeholder="Enter your address" required>
+                </div>
+
+                <!-- Parent/Guardian Information -->
+                <div class="form-group">
+                    <label class="label" for="parent_guardian_name">Parent/Guardian Name:</label>
+                    <input type="text" name="entry.810018367" id="parent_guardian_name"
+                        placeholder="Enter parent/guardian name" required>
+                </div>
+
+                <!-- Educational Background -->
+                <div class="form-group">
+                    <label class="label" for="school">Current School/College:</label>
+                    <input type="text" name="entry.36742300" id="school" placeholder="Enter your current school name"
+                        required>
+                </div>
+
+                <!-- Course/Program Selection -->
+                <div class="form-group">
+                    <label class="label" for="course">Course/Program Selection:</label>
+                    <select name="entry.723413762" id="course" required>
+                        <option value="course1">1<sup>st</sup></option>
+                        <option value="course2">2<sup>nd</sup></option>
+                        <option value="course3">3<sup>rd</sup></option>
+                        <option value="course4">4<sup>th</sup></option>
+                        <option value="course5">5<sup>th</sup></option>
+                        <option value="course6">6<sup>th</sup></option>
+                        <option value="course7">7<sup>th</sup></option>
+                        <option value="course8">8<sup>th</sup></option>
+                        <option value="course9">9<sup>th</sup></option>
+                        <option value="course10">10<sup>th</sup></option>
+                        <option value="course11">11<sup>th</sup></option>
+                        <option value="course12">12<sup>th</sup></option>
+                        <option value="course13">NEET</option>
+
+                    </select>
+                </div>
+
+                <!-- Emergency Contact -->
+                <div class="form-group">
+                    <label class="label" for="emergency-contact">Emergency Contact:</label>
+                    <input type="text" name="entry.1505471079" id="emergency-contact"
+                        placeholder="Enter emergency contact">
+                </div>
+
+                <!-- Additional Comments/Notes -->
+                <div class="form-group">
+                    <label class="label" for="comments">Additional Comments/Notes:</label>
+                    <textarea name="entry.1328058885" id="comments" rows="4"
+                        placeholder="Add any comments or notes"></textarea>
+                </div>
+
+                <!-- Submit Button -->
                 <button type="submit">Register</button>
             </form>
         </div>
+
         <div class="foot">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ipsa in consequuntur atque ad officia
-                magnam esse! Dolorem pariatur delectus laudantium aperiam voluptas consequatur eaque iusto molestias qui
-                nulla! Aliquam nisi quas iusto nemo qui laborum explicabo itaque reiciendis voluptas ratione numquam
-                nihil, eos non animi maiores cupiditate nesciunt magnam quia! Voluptas, quas sunt sit eius illum
-                deleniti beatae neque eum doloremque aperiam, placeat exercitationem ad harum libero iure.</p>
+            <!-- Footer content -->
         </div>
     </main>
-
 
 
 </body>

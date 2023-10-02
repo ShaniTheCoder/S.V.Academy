@@ -10,13 +10,19 @@
   color: white;
   width: 90%;
   margin: auto;
-  text-align: center;
   margin-top: 8px;
 }
 .head {
   display: flex;
   align-items: center;
+  flex-direction: column;
   padding: 10px 20px;
+  justify-content: center;
+}
+.head .segment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 form {
   display: flex;
@@ -25,7 +31,7 @@ form {
 }
 main .Form-content label,
 input {
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 main .Form-content input {
@@ -57,15 +63,64 @@ main .Form-content button:hover {
   background-color: #ffb44a;
   border: 2px solid #ffc97c;
 }
-main .Form-content label {
+.label {
   text-align: left;
 }
 .content {
   flex-grow: 1;
 }
-.head .logo img {
+.head img {
   height: 100px;
   width: 100px;
-  position: relative;
-  left: 100%;
+}
+/* Additional form styles */
+.main .Form-content .form-group {
+  margin: 15px 0;
+}
+.main .Form-content .form-group input,
+select {
+  text-align: center;
+}
+
+.main .Form-content select {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+  border: 2px solid #ffb44a;
+  border-radius: 20px;
+  background-color: #ffc97c;
+}
+
+.main .Form-content textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+  border: 2px solid #ffb44a;
+  border-radius: 20px;
+  background-color: #ffc97c;
+  resize: vertical;
+}
+
+/* Additional form styles */
+.main .Form-content .form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .Form-content .form-group {
+  flex: 1;
+  margin: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .main .Form-content .form-row {
+    flex-direction: column; /* Stack fields vertically */
+  }
+
+  .main .Form-content .form-group {
+    margin: 10px 0; /* Add some vertical spacing between fields */
+  }
+  .main .Form-content .form-row .form-group {
+    width: 100%;
+  }
 }
