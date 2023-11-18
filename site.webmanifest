@@ -1,0 +1,13 @@
+{
+    "name":"S.V.Academy",
+    "short_name":"SVA",
+    "icons":
+    [
+        {"src":"images/logo192.png","sizes":"192x192","type":"image/png"},
+        {"src":"images/logo96.png","sizes":"96x96","type":"image/png"},
+        {"src":"images/logo168.png","sizes":"168x168","type":"image/png"}
+    ],
+    "theme_color":"#cc0000",
+    "background_color":"#cc0000",
+    "display":"standalone" 
+}
