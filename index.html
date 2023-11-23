@@ -24,7 +24,22 @@
                 </li>
             </ul>
         </div>
-        <div id="register"><a href="https://forms.gle/2mRRs9DBn2UQSFEE7">Register</a></div>
+        <div>
+            <div id="register"><a href="https://forms.gle/2mRRs9DBn2UQSFEE7">Register</a></div>
+            <div class="menuToggle"></div>
+        </div>
+    </nav>
+    <nav id="secondaryNav">
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HTML/course.html">Courses</a></li>
+                <li><a href="HTML/about.html">About</a></li>
+                <li><a href="HTML/note.html">Notes</a>
+                </li>
+                <li><a href="https://forms.gle/2mRRs9DBn2UQSFEE7">Register</a></li>
+            </ul>
+        </div>
     </nav>
     <header>
 
@@ -118,6 +133,14 @@
     </footer>
     <script type="module" src="db.js"></script>
     <script src="javascript/index.js"></script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle')
+        let nav = document.querySelector("#secondaryNav")
+        menuToggle.onclick = () => {
+            nav.classList.toggle('active')
+            menuToggle.classList.toggle('active')
+        }
+    </script>
 </body>
 
 </html>

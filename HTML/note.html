@@ -18,13 +18,26 @@
         <div id="nav-div">
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="course.html">Courses</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="note.html">Notes</a>
+                <li><a href="/HTML/course.html">Courses</a></li>
+                <li><a href="/HTML/about.html">About</a></li>
+                <li><a href="/HTML/note.html">Notes</a>
                 </li>
             </ul>
         </div>
         <div id="register"><a href="https://forms.gle/2mRRs9DBn2UQSFEE7">Register</a></div>
+        <div class="menuToggle"></div>
+    </nav>
+    <nav id="secondaryNav">
+        <div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/HTML/course.html">Courses</a></li>
+                <li><a href="/HTML/about.html">About</a></li>
+                <li><a href="/HTML/note.html">Notes</a>
+                </li>
+                <li><a href="https://forms.gle/2mRRs9DBn2UQSFEE7">Register</a></li>
+            </ul>
+        </div>
     </nav>
     <header class="header">
         <h2>
@@ -133,6 +146,14 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
     <script src="/javascript/note.js"></script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle')
+        let nav = document.querySelector("#secondaryNav")
+        menuToggle.onclick = () => {
+            nav.classList.toggle('active')
+            menuToggle.classList.toggle('active')
+        }
+    </script>
 </body>
 
 </html>
